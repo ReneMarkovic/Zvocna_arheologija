@@ -7,9 +7,18 @@ from scipy import signal
 import numpy as np
 import time
 
-device = sd.default.device[0]
-print("Default device:", device)
+print(sd.query_devices())
+print(sd.default.device)
 
+'''
+sd.default.device ima seznam dveh elementov
+sd.default.device[0] je vhod
+sd.default.device[1] je izhod
+'''
+device = 7 #Uporabi sedmo (osma) naprava iz seznama za snemalno napravo#sd.default.device[0]
+print("------------------")
+print("Default device:", device)
+input()
 '''devices = sd.query_devices()
 for idx, device in enumerate(devices):
     print(f"Device index: {idx}, Device name: {device['name']}")'''
