@@ -15,7 +15,7 @@ sd.default.device ima seznam dveh elementov
 sd.default.device[0] je vhod
 sd.default.device[1] je izhod
 '''
-device = 7 #Uporabi sedmo (osma) naprava iz seznama za snemalno napravo#sd.default.device[0]
+device = 0 #Uporabi sedmo (osma) naprava iz seznama za snemalno napravo#sd.default.device[0]
 print("------------------")
 print("Default device:", device)
 input()
